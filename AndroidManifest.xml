@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demo.demoactivity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/str_AppTitle"
+        android:theme="@style/AppTheme" >
+        <!--stateVisible 一直显示键盘 adjustResize 显示键盘时调整布局-->
+        <activity
+            android:name="com.demo.demoactivity.LoginActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:label="@string/str_AppTitle" >
+<!--Activity的标题-->
+            <intent-filter>
+<!--Intent过滤器-->
+                <action android:name="android.intent.action.MAIN" />
+<!--设定APP的启动Activity-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.demo.demoactivity.MainActivity"
+            android:label="@string/str_Login" >
+        </activity>
+        <activity
+            android:name="com.demo.demoactivity.MusicActivity"
+            android:label="@string/title_activity_music" >
+        </activity>
+    </application>
+
+</manifest>

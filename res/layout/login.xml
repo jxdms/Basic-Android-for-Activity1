@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="81dp"
+        android:text="@string/str_UserName" />
+
+    <EditText
+        android:id="@+id/et_UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_UserName"
+        android:layout_alignBottom="@+id/tv_UserName"
+        android:layout_alignLeft="@+id/et_PassWord"
+        android:singleLine="true"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_PassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_UserName"
+        android:layout_marginTop="58dp"
+        android:layout_toRightOf="@+id/tv_UserName"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        >
+
+        
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_PassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_PassWord"
+        android:layout_alignBottom="@+id/et_PassWord"
+        android:layout_alignLeft="@+id/tv_UserName"
+        android:text="@string/str_PassWord" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_PassWord"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="@string/str_Login" />
+
+</RelativeLayout>
